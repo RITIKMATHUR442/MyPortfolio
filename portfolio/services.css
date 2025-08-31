@@ -1,0 +1,91 @@
+/* ============================
+   🔹 Services Page Styles
+   ============================ */
+
+/* Services Section */
+.services {
+  padding: 120px 10%;
+  text-align: center;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+}
+
+.services .heading {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #00ffff;
+  text-transform: uppercase;
+}
+
+.services .heading span {
+  color: #ff00ff;
+}
+
+/* Services Cards */
+.services .profession-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.services .profession {
+  background: #111;
+  border: 2px solid #00ffff;
+  padding: 30px;
+  width: 280px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 255, 255, 0.25);
+  transition: all 0.4s ease;
+}
+
+.services .profession i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #00ffff;
+  transition: color 0.3s ease;
+}
+
+.services .profession h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.services .profession p {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.services .profession:hover {
+  transform: translateY(-12px) scale(1.05);
+  border-color: #ff00ff;
+  box-shadow: 0 10px 25px rgba(255, 0, 255, 0.4);
+}
+
+.services .profession:hover i {
+  color: #ff00ff;
+}
+
+/* Light Mode Support */
+body.light-mode .services {
+  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+}
+
+body.light-mode .services .profession {
+  background: #fff;
+  border: 2px solid #0077ff;
+}
+
+body.light-mode .services .profession h3 {
+  color: #222;
+}
+
+body.light-mode .services .profession p {
+  color: #444;
+}
+
+body.light-mode .services .profession i {
+  color: #0077ff;
+}

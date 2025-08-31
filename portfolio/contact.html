@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ritik Mathur</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <i class='bx bx-moon' id="darkMode-icon"></i>
+  </header>
+
+  <section id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <p>Have a project idea or just want to say hi? Let’s connect!</p>
+
+    <form id="contact-form">
+  <input type="text" name="from_name" placeholder="Your Name" required>
+  <input type="email" name="from_email" placeholder="Your Email" required>
+  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+  </section>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <p>© 2025 Ritik Mathur. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/ritikmathur" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/mr_mathur.902?igsh=MTI0OXhsYnBiNDU2eA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com/your_facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Load EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

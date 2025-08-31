@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 100px 10%;
+  background: linear-gradient(135deg, #000, #0d0d0d);
+  border-top: 2px solid #00ffff;
+}
+
+.about-img img {
+  width: 320px;
+  border-radius: 20px;
+  border: 5px solid #00ffff;
+  transition: transform 1s ease;
+}
+
+.about-img img:hover {
+  transform: rotateY(180deg) scale(1.05);
+}
+
+.about-content {
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.about-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #00ffff;
+}
+
+.about-content h2 span {
+  color: #ff00ff;
+}
+
+.about-content h3 {
+  margin-bottom: 25px;
+}
+body.light-mode.about-content p {
+  line-height: 1.7;
+  color: #333;
+}
