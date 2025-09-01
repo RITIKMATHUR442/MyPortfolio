@@ -38,6 +38,18 @@ document.querySelectorAll(".navbar a").forEach(link => {
 });
 
 // ==========================
+// Hamburger for mobile 
+// ==========================
+
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('show');
+});
+
+
+// ==========================
 // Initialize EmailJS
 // ==========================
 emailjs.init("iB3JrI6zAEtoWO-ze"); // Public Key
